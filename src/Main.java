@@ -102,8 +102,8 @@ public class Main {
 
         int depositSavings = 0;
         for (int month = 1; month <= 12; month++) {
-            depositSavings += 29_000;
             depositSavings += depositSavings / 100;
+            depositSavings += 29_000;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + depositSavings + " рублей");
         }
 
